@@ -1,0 +1,1378 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Zena ❤️ Birthday</title>
+    <link rel="icon" type="image/png" href="images/favicon.png.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Great+Vibes&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body>
+
+    <!-- ================= MUSIC ================= -->
+    <audio id="bgMusic" preload="auto">
+        <source src="music/birthday.mp3.mp3" type="audio/mpeg">
+        متصفحك لا يدعم تشغيل الصوت.
+    </audio>
+
+    <!-- باقي الموقع -->
+    <!-- ================= OPENING ================= -->
+
+    <div id="openingScreen" class="opening-screen">
+
+        <div class="opening-stars"></div>
+
+        <div class="opening-hearts">
+            <span>❤️</span>
+            <span>💕</span>
+            <span>💗</span>
+            <span>💖</span>
+            <span>❤️</span>
+            <span>💘</span>
+        </div>
+
+        <div class="opening-content">
+
+            <div class="opening-small">
+                13 • 10 • 2001
+            </div>
+
+            <div class="opening-heart">❤️</div>
+
+            <h1>Zena</h1>
+            <h2>زينة</h2>
+
+            <p data-i18n="openingText">
+                في يوم من الأيام وُلدت إنسانة<br>
+                لم تكن تعرف أن قلبًا ما سيحبها بكل هذا القدر...
+            </p>
+
+            <button id="startBtn" class="main-btn big-btn">
+                <span data-i18n="startStory">ابدئي القصة ❤️</span>
+            </button>
+
+        </div>
+    </div>
+
+
+    <!-- ================= MUSIC ================= -->
+
+    <audio id="bgMusic" loop preload="auto">
+        <source src="music/birthday.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <!-- ================= FLOATING HEARTS ================= -->
+
+    <div id="heartsContainer"></div>
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Zena <span>❤️</span>
+        </div>
+
+        <div class="nav-links">
+
+            <a href="#home" data-i18n="navHome">الرئيسية</a>
+            <a href="#memories" data-i18n="navMemories">ذكرياتنا</a>
+            <a href="#story" data-i18n="navStory">قصتنا</a>
+            <a href="#future" data-i18n="navFuture">المستقبل</a>
+
+        </div>
+
+        <div class="nav-buttons">
+
+            <button id="languageBtn" title="Language">EN</button>
+
+            <button id="themeBtn" title="Theme">🌙</button>
+
+            <button id="musicBtn" class="music-control" title="Music">
+                <span id="musicIcon">🎵</span>
+                <span id="musicText" data-i18n="music">موسيقى</span>
+            </button>
+
+              
+
+        </div>
+
+    </nav>
+
+
+    <!-- ================= HOME ================= -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <div class="hero-small">
+                To The Girl Who Owns My Heart
+            </div>
+
+            <h1>Happy Birthday</h1>
+
+            <h2>Zena ❤️</h2>
+
+            <p data-i18n="heroText">
+                اليوم مش مجرد تاريخ على التقويم...
+                <br>
+                اليوم هو اليوم اللي صار فيه العالم أجمل.
+            </p>
+
+            <a href="#countdown" class="main-btn">
+                <span data-i18n="startJourney">ابدئي رحلتك ✨</span>
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= COUNTDOWN ================= -->
+
+    <section id="countdown" class="countdown-section">
+
+        <div class="section-title">
+
+            <span>🎂</span>
+
+            <h2 data-i18n="countdownTitle">
+                العد التنازلي ليومك
+            </h2>
+
+            <p data-i18n="countdownText">
+                كل ثانية تقربنا من يوم ولدت فيه أجمل صدفة في حياتي
+            </p>
+
+        </div>
+
+        <div class="countdown">
+
+            <div class="time-box">
+                <strong id="days">00</strong>
+                <span data-i18n="days">يوم</span>
+            </div>
+
+            <div class="time-box">
+                <strong id="hours">00</strong>
+                <span data-i18n="hours">ساعة</span>
+            </div>
+
+            <div class="time-box">
+                <strong id="minutes">00</strong>
+                <span data-i18n="minutes">دقيقة</span>
+            </div>
+
+            <div class="time-box">
+                <strong id="seconds">00</strong>
+                <span data-i18n="seconds">ثانية</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SINCE ================= -->
+
+    <section class="since-section">
+
+        <div class="section-title">
+
+            <span>❤️</span>
+
+            <h2 data-i18n="sinceTitle">
+                وكل لحظة معك...
+            </h2>
+
+            <p data-i18n="sinceText">
+                تستحق أن تُحسب
+            </p>
+
+        </div>
+
+        <div class="since-counter">
+
+            <div>
+                <strong id="sinceDays">0</strong>
+                <span data-i18n="days">يوم</span>
+            </div>
+
+            <div>
+                <strong id="sinceHours">0</strong>
+                <span data-i18n="hours">ساعة</span>
+            </div>
+
+            <div>
+                <strong id="sinceMinutes">0</strong>
+                <span data-i18n="minutes">دقيقة</span>
+            </div>
+
+            <div>
+                <strong id="sinceSeconds">0</strong>
+                <span data-i18n="seconds">ثانية</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SECRET ================= -->
+
+    <section class="secret-section">
+
+        <div class="secret-card">
+
+            <div class="secret-icon">🔐</div>
+
+            <h2 data-i18n="secretTitle">
+                في شيء مخبأ إلك...
+            </h2>
+
+            <p data-i18n="secretText">
+                بس مش أي شخص بقدر يفتحه ❤️
+            </p>
+
+            <button id="secretBtn" class="main-btn">
+                <span data-i18n="secretButton">اكتشفي السر 🔑</span>
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MEMORIES ================= -->
+
+    <section id="memories" class="memories-section">
+
+        <div class="section-title">
+
+            <span>📸</span>
+
+            <h2 data-i18n="memoriesTitle">
+                ألبوم ذكرياتنا
+            </h2>
+
+            <p data-i18n="memoriesText">
+                بعض الصور لا تحتاج إلى شرح...
+                لأنها تحمل شعورًا كاملًا.
+            </p>
+
+        </div>
+
+        <div class="gallery">
+
+            <div class="photo-card">
+                <img src="images/photo.1.jpg" alt="Memory 1">
+                <div class="photo-caption" data-i18n="photo1">
+                    أولى الذكريات ❤️
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/photo.2.jpg" alt="Memory 2">
+                <div class="photo-caption" data-i18n="photo2">
+                    ضحكتك أجمل تفصيل
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/photo.3.jpg" alt="Memory 3">
+                <div class="photo-caption" data-i18n="photo3">
+                    لحظة لن أنساها
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/photo.4.jpg" alt="Memory 4">
+                <div class="photo-caption" data-i18n="photo4">
+                    أنتِ أجمل صدفة
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/photo.5.jpg" alt="Memory 5">
+                <div class="photo-caption" data-i18n="photo5">
+                    تفاصيلك الصغيرة
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/photo.6.jpg" alt="Memory 6">
+                <div class="photo-caption" data-i18n="photo6">
+                    وإلى ذكريات أجمل ❤️
+                </div>
+            </div>
+
+            
+            <div class="photo-card">
+                <img src="images/photo.7.jpg" alt="Memory 7">
+                <div class="photo-caption" data-i18n="photo7">
+                   أنتِ الحكاية التي لا أريد لها نهاية❤️
+                </div>
+            </div>
+
+             <div class="photo-card">
+                <img src="images/photo.8.jpg" alt="Memory 8">
+                <div class="photo-caption" data-i18n="photo8">
+                   أحبك اليوم، وغدًا، وكل يوم❤️
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/photo.9.jpg" alt="Memory 9">
+                <div class="photo-caption" data-i18n="photo9">
+                   أنتِ أجمل صدفة في حياتي 💕
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/photo.10.jpg" alt="Memory 10">
+                <div class="photo-caption" data-i18n="photo10">
+                   أنتِ قصتي المفضلة❤️
+                </div>
+            </div>
+
+             <div class="photo-card">
+                <img src="images/photo.11.jpg" alt="Memory 11">
+                <div class="photo-caption" data-i18n="photo11">
+                   أنتِ نبضي الهادئ وسط ضجيج العالم❤️
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/photo.12.jpg" alt="Memory 12">
+                <div class="photo-caption" data-i18n="photo12">
+                   أنتِ راحتي وسط كل شيء
+                </div>
+            </div>
+
+             <div class="photo-card">
+                <img src="images/photo.13.jpg" alt="Memory 13">
+                <div class="photo-caption" data-i18n="photo13">
+                   في عيونك حكاية، وأنا أحب أضيع فيها. ❤️
+
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/photo.14.jpg" alt="Memory 14">
+                <div class="photo-caption" data-i18n="photo14">
+                   أنتِ أجمل تفاصيل حياتي 💗
+                </div>
+            </div>
+
+             <div class="photo-card">
+                <img src="images/photo.15.jpg" alt="Memory 15">
+                <div class="photo-caption" data-i18n="photo15">
+                   أنتِ حكاية قلبي 🌹
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/photo.16.jpg" alt="Memory 16">
+                <div class="photo-caption" data-i18n="photo16">
+                   عيونك العسل❤️
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/photo.17.jpg" alt="Memory 17">
+                <div class="photo-caption" data-i18n="photo17">
+                   لحظة بسيطة لكنها غالية 💗
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/photo.18.jpg" alt="Memory 18">
+                <div class="photo-caption" data-i18n="photo18">
+                   لحظة مليئة بالحب ❤️
+                   باقية تودي بوسات بس انا مش باقي اقدر يعسولة 
+                </div>
+            </div>
+
+             <div class="photo-card">
+                <img src="images/photo.19.jpg" alt="Memory 19">
+                <div class="photo-caption" data-i18n="photo19">
+                   هنا تسكن قلبي ❤️
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/photo.20.jpg" alt="Memory 20">
+                <div class="photo-caption" data-i18n="photo20">
+                   ذكرى أحتفظ بها في قلبي 🤍
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/photo.21.jpg" alt="Memory 21">
+                <div class="photo-caption" data-i18n="photo21">
+                   من أجمل أيامي ✨
+                </div>
+            </div>
+
+             <div class="photo-card">
+                <img src="images/photo.22.jpg" alt="Memory 22">
+                <div class="photo-caption" data-i18n="photo22">
+                   وما زالت الذكرى جميلة ✨
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/photo.23.jpg" alt="Memory 23">
+                <div class="photo-caption" data-i18n="photo23">
+                   صورة تختصر ألف شعور ❤️
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/photo.24.jpg" alt="Memory 24">
+                <div class="photo-caption" data-i18n="photo24">
+                    وإلى ذكريات أجمل ❤️
+                </div>
+            </div>
+
+             <div class="photo-card">
+                <img src="images/photo.25.jpg" alt="Memory 25">
+                <div class="photo-caption" data-i18n="photo25">
+                   لأنكِ أنتِ فقط 🤍
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/photo.26.jpg" alt="Memory 26">
+                <div class="photo-caption" data-i18n="photo26">
+                    تفاصيل صغيرة أحبها كثيرًا 🌷
+                </div>
+            </div>
+
+              <div class="photo-card">
+                <img src="images/photo.27.jpg" alt="Memory 27">
+                <div class="photo-caption" data-i18n="photo27">
+                    كل صورة معك لها حكاية ❤️
+                </div>
+            </div>
+
+             <div class="photo-card">
+                <img src="images/photo.28.jpg" alt="Memory 28">
+                <div class="photo-caption" data-i18n="photo28">
+                   يا أجمل من رأى قلبي 🌷
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/photo.29.jpg" alt="Memory 29">
+                <div class="photo-caption" data-i18n="photo29">
+                   أيام جميلة صنعتها أنتِ ✨
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/photo.30.jpg" alt="Memory 30">
+                <div class="photo-caption" data-i18n="photo30">
+                   قربك أجمل مكان 🌹
+                </div>
+            </div>
+
+             <div class="photo-card">
+                <img src="images/photo.31.jpg" alt="Memory 31">
+                <div class="photo-caption" data-i18n="photo31">
+                   أنتِ حكاية قلبي 🌹
+                </div>
+            </div>
+
+             <div class="photo-card">
+                <img src="images/photo.32.jpg" alt="Memory 32">
+                <div class="photo-caption" data-i18n="photo32">
+                   ابتسامتك أجمل تفاصيلي ❤️
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/photo.33.jpg" alt="Memory 33">
+                <div class="photo-caption" data-i18n="photo33">
+                   لحظة بسيطة لكنها غالية 💗
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/photo.34.jpg" alt="Memory 34">
+                <div class="photo-caption" data-i18n="photo34">
+                    أجمل لحظاتنا معًا 🌷
+                </div>
+            </div>
+
+              <div class="photo-card">
+                <img src="images/photo.35.png" alt="Memory 35">
+                <div class="photo-caption" data-i18n="photo35">
+                   بيننا ألف ذكرى وذكرى 💕
+                </div>
+            </div>
+
+             <div class="photo-card">
+                <img src="images/photo.36.jpg" alt="Memory 36">
+                <div class="photo-caption" data-i18n="photo36">
+                   لحظة أتمنى أن تعود ❤️
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/photo.37.jpg" alt="Memory 37">
+                <div class="photo-caption" data-i18n="photo37">
+                   لحظة لن أنساها أبدًا ❤️
+                </div>
+            </div>
+
+             <div class="photo-card">
+                <img src="images/photo.38.jpg" alt="Memory 38">
+                <div class="photo-caption" data-i18n="photo38">
+                       ذكرى لا تشبه أي ذكرى ❤️
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/photo.39.jpg" alt="Memory 39">
+                <div class="photo-caption" data-i18n="photo39">
+                    لحظة بقيت في قلبي 🤍
+                </div>
+            </div>
+
+             <div class="photo-card">
+                <img src="images/photo.40.jpg" alt="Memory 40">
+                <div class="photo-caption" data-i18n="photo40">
+                   أجمل ما مرّ في أيامي 💗
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/photo.41.jpg" alt="Memory 41">
+                <div class="photo-caption" data-i18n="photo41">
+                   كل شيء بكِ يصبح أجمل 🌹
+                </div>
+            </div>
+
+            <div class="photo-card">
+                <img src="images/photo.42.jpg" alt="Memory 42">
+                <div class="photo-caption" data-i18n="photo42">
+                    هنا بدأت حكاية جميلة ✨
+                        أعشقك يحلوتي ام دمعه
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- ================= VIDEOS ================= -->
+
+    <section class="video-section">
+
+        <div class="section-title">
+
+            <span>🎥</span>
+
+            <h2 data-i18n="videoTitle">
+                لحظات تتحرك أمامنا
+            </h2>
+
+            <p data-i18n="videoText">
+                لأن بعض الذكريات أجمل عندما نراها من جديد.
+            </p>
+
+        </div>
+
+        <div class="video-grid">
+
+            <div class="video-card">
+               <video controls poster="images/photo.1.jpg">
+                    <source src="videos/video1.mp4.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="video-card">
+                <video controls poster="images/photo.2.jpg">
+                    <source src="videos/video2.mp4.mp4" type="video/mp4">
+                </video>
+            </div>
+
+             <div class="video-card">
+                <video controls poster="images/photo.13.jpg">
+                    <source src="videos/video3.mp4.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="video-card">
+                <video controls poster="images/photo.10.jpg">
+                    <source src="videos/video4.mp4.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="video-card">
+                <video controls poster="images/photo.8.jpg">
+                    <source src="videos/video5.mp4.mp4" type="video/mp4">
+                </video>
+            </div>
+
+             <div class="video-card">
+                <video controls poster="images/photo.25.jpg">
+                    <source src="videos/video6.mp4.mp4" type="video/mp4">
+                </video>
+            </div>
+
+             <div class="video-card">
+                <video controls poster="images/photo.4.jpg">
+                    <source src="videos/video7.mp4.mp4" type="video/mp4">
+                </video>
+            </div>
+
+             <div class="video-card">
+                <video controls poster="images/photo.32.jpg">
+                    <source src="videos/video8.mp4.mp4" type="video/mp4">
+                </video>
+            </div>
+
+             <div class="video-card">
+                <video controls poster="images/photo.3.jpg">
+                    <source src="videos/video9.mp4.mp4" type="video/mp4">
+                </video>
+            </div>
+
+             <div class="video-card">
+                <video controls poster="images/photo.20.jpg">
+                    <source src="videos/video10.mp4.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- ================= LOVE ================= -->
+
+    <section class="love-section">
+
+        <div class="section-title">
+
+            <span>💌</span>
+
+            <h2 data-i18n="loveTitle">
+                أشياء أحبها فيكِ
+            </h2>
+
+            <p data-i18n="loveText">
+                ولو كتبت كل الأسباب...
+                ما أظن أن صفحة واحدة ستكفيني.
+            </p>
+
+        </div>
+
+        <div class="love-grid">
+
+            <div class="love-card">
+                <span>❤️</span>
+                <h3 data-i18n="love1Title">ضحكتك</h3>
+                <p data-i18n="love1Text">
+                    لأنها قادرة تغير يوم كامل بكلمة واحدة.
+                </p>
+            </div>
+
+            <div class="love-card">
+                <span>🌹</span>
+                <h3 data-i18n="love2Title">قلبك</h3>
+                <p data-i18n="love2Text">
+                    لأن داخلك أجمل من كل شيء يمكن وصفه.
+                </p>
+            </div>
+
+            <div class="love-card">
+                <span>✨</span>
+                <h3 data-i18n="love3Title">وجودك</h3>
+                <p data-i18n="love3Text">
+                    مجرد وجودك يجعل الأشياء العادية مختلفة.
+                </p>
+            </div>
+
+            <div class="love-card">
+                <span>🫶</span>
+                <h3 data-i18n="love4Title">أنتِ</h3>
+                <p data-i18n="love4Text">
+                    ببساطة... أحبك لأنك أنتِ.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= RANDOM ================= -->
+
+    <section class="random-section">
+
+        <div class="random-card">
+
+            <span class="big-heart">💗</span>
+
+            <h2 data-i18n="randomTitle">
+                اضغطي على القلب...
+            </h2>
+
+            <p id="randomMessage" data-i18n="randomDefault">
+                ويمكن يطلع لك شيء من الأشياء اللي نفسي أحكيلك إياها.
+            </p>
+
+            <button id="randomBtn" class="heart-button">
+                ❤️
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= GIFTS ================= -->
+
+    <section class="gifts-section">
+
+        <div class="section-title">
+
+            <span>🎁</span>
+
+            <h2 data-i18n="giftsTitle">
+                عندي لكِ 3 هدايا
+            </h2>
+
+            <p data-i18n="giftsText">
+                اختاري واحدة... أو جربيهم كلهم 💋❤️
+            </p>
+
+        </div>
+
+        <div class="gifts">
+
+            <div class="gift-box" data-gift="1">
+                <div class="gift-icon">🎁</div>
+                <span data-i18n="gift1">هدية رقم 1</span>
+            </div>
+
+            <div class="gift-box" data-gift="2">
+                <div class="gift-icon">🎁</div>
+                <span data-i18n="gift2">هدية رقم 2</span>
+            </div>
+
+            <div class="gift-box" data-gift="3">
+                <div class="gift-icon">🎁</div>
+                <span data-i18n="gift3">هدية رقم 3</span>
+            </div>
+
+        </div>
+
+        <p id="giftMessage"></p>
+
+    </section>
+
+
+    <!-- ================= GAME ================= -->
+
+    <section class="game-section">
+
+        <div class="section-title">
+
+            <span>🎮</span>
+
+            <h2 data-i18n="gameTitle">
+                لعبة قلوب زينة ❤️
+            </h2>
+
+            <p data-i18n="gameText">
+                اجمعي القلوب واكتشفي تاريخ اليوم الذي بدأت فيه حكاية جميلة.
+            </p>
+
+        </div>
+
+        <div class="birthday-progress">
+
+            <div class="birthday-date">
+                <span id="gameDateText">13 • 10 • 2001</span>
+            </div>
+
+            <div class="progress-label">
+
+                <span id="gameStage" data-i18n="stageOne">
+                    المرحلة الأولى
+                </span>
+
+                <span id="gameCounter">
+                    0 / 13
+                </span>
+
+            </div>
+
+            <div class="progress-bar">
+                <div id="gameProgress"></div>
+            </div>
+
+        </div>
+
+        <div class="game-info">
+
+            <div>
+                ❤️
+                <strong id="score">0</strong>
+            </div>
+
+            <div>
+                🏆
+                <strong id="stageScore">13</strong>
+            </div>
+
+        </div>
+
+        <div id="gameArea">
+
+            <div class="game-start-message">
+
+                <span>💌</span>
+
+                <h3 data-i18n="ready">
+                    جاهزة؟
+                </h3>
+
+                <p data-i18n="gameStartText">
+                    كل قلب ستجمعينه يحمل رسالة مختلفة لكِ.
+                </p>
+
+                <button id="startGameBtn" class="main-btn">
+                    <span data-i18n="startGame">
+                        ابدئي اللعبة ❤️
+                    </span>
+                </button>
+
+            </div>
+
+        </div>
+
+        <div id="gameMessage" class="game-message"></div>
+
+    </section>
+
+
+    <!-- ================= HIDDEN HEART ================= -->
+
+    <section class="hidden-heart-section">
+
+        <div class="hidden-heart-card">
+
+            <div id="hiddenHeart">❤️</div>
+
+            <h2 data-i18n="hiddenTitle">
+                هناك قلب واحد مختلف...
+            </h2>
+
+            <p data-i18n="hiddenText">
+                إذا وجدتيه، يمكن أن تكتشفي شيئًا آخر.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= STORY ================= -->
+
+    <section id="story" class="timeline-section">
+
+        <div class="section-title">
+
+            <span>🕰️</span>
+
+            <h2 data-i18n="storyTitle">
+                بعض من قصتنا
+            </h2>
+
+            <p data-i18n="storyText">
+                لأن أجمل القصص لا تُقاس بعدد الصفحات.
+            </p>
+
+        </div>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot">❤️</div>
+
+                <div class="timeline-content">
+
+                    <span data-i18n="time1Small">البداية</span>
+
+                    <h3 data-i18n="time1Title">
+                        أول مرة دخلتِ حياتي
+                    </h3>
+
+                    <p data-i18n="time1Text">
+                        لم أكن أعرف وقتها أن شخصًا واحدًا
+                        يمكن أن يترك كل هذا الأثر.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot">✨</div>
+
+                <div class="timeline-content">
+
+                    <span data-i18n="time2Small">ثم...</span>
+
+                    <h3 data-i18n="time2Title">
+                        بدأت التفاصيل تكبر
+                    </h3>
+
+                    <p data-i18n="time2Text">
+                        صارت رسائلك، صوتك، ضحكتك،
+                        وكل شيء فيك جزءًا من يومي.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot">🥹</div>
+
+                <div class="timeline-content">
+
+                    <span data-i18n="time3Small">
+                        حتى في الأيام الصعبة
+                    </span>
+
+                    <h3 data-i18n="time3Title">
+                        بقيتِ مهمة
+                    </h3>
+
+                    <p data-i18n="time3Text">
+                        لأن بعض الأشخاص لا يرتبطون بالأيام الجميلة فقط،
+                        بل يصبحون جزءًا من القلب.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot">❤️</div>
+
+                <div class="timeline-content">
+
+                    <span data-i18n="time4Small">واليوم</span>
+
+                    <h3 data-i18n="time4Title">
+                        ما زالت الحكاية مستمرة
+                    </h3>
+
+                    <p data-i18n="time4Text">
+                        وهذه الصفحة ليست النهاية...
+                        هذه مجرد بداية فصل جديد.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= HERE ================= -->
+
+    <section class="here-section">
+
+        <div class="section-title">
+
+            <span> 
+                   💋</span>
+
+            <h2 data-i18n="hereTitle">
+                لو كنتِ هنا الآن...
+            </h2>
+
+        </div>
+
+        <div class="here-grid">
+
+            <div class="here-card">
+                <span>☕</span>
+                <h3 data-i18n="here1Title">أول شيء</h3>
+                <p data-i18n="here1Text">
+                    كنت سأجلس بجانبك وأترك الكلام للعيون.
+                </p>
+            </div>
+
+            <div class="here-card">
+                <span>🌹</span>
+                <h3 data-i18n="here2Title">ثاني شيء</h3>
+                <p data-i18n="here2Text">
+                    كنت سأعطيك وردة وأقول لك: كل سنة وأنتِ معي.
+                </p>
+            </div>
+
+            <div class="here-card">
+                <span>🤍</span>
+                <h3 data-i18n="here3Title">ثالث شيء</h3>
+                <p data-i18n="here3Text">
+                    كنت سأحضنك وقتًا طويلًا بدون أي كلام.
+                </p>
+            </div>
+
+            <div class="here-card">
+                <span>❤️</span>
+                <h3 data-i18n="here4Title">والأهم</h3>
+                <p data-i18n="here4Text">
+                    كنت سأخبرك كم أنتِ غالية عندي.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FUTURE ================= -->
+
+    <section id="future" class="future-section">
+
+        <div class="section-title">
+
+            <span>🌙</span>
+
+            <h2 data-i18n="futureTitle">
+                أشياء أتمنى نعيشها سوا
+            </h2>
+
+            <p data-i18n="futureText">
+                لأنني لا أريد أن تكون أجمل ذكرياتنا كلها في الماضي.
+            </p>
+
+        </div>
+
+        <div class="future-grid">
+
+            <div class="future-card">
+                <span>✈️</span>
+                <h3 data-i18n="future1Title">أول سفرية</h3>
+                <p data-i18n="future1Text">
+                    مكان جديد، طريق طويل، وأنتِ بجانبي.
+                </p>
+            </div>
+
+            <div class="future-card">
+                <span>🌅</span>
+                <h3 data-i18n="future2Title">أول غروب</h3>
+                <p data-i18n="future2Text">
+                    نشاهد الشمس تختفي ونحكي عن كل شيء.
+                </p>
+            </div>
+
+            <div class="future-card">
+                <span>🏠</span>
+                <h3 data-i18n="future3Title">مكان يجمعنا</h3>
+                <p data-i18n="future3Text">
+                    مكان صغير، لكنه مليء بالضحك والراحة.
+                </p>
+            </div>
+
+            <div class="future-card">
+                <span>♾️</span>
+                <h3 data-i18n="future4Title">وما بعد ذلك</h3>
+                <p data-i18n="future4Text">
+                    أشياء كثيرة لا أعرف تفاصيلها...
+                    لكن أتمنى تكونين فيها.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ROSE ================= -->
+
+    <section class="rose-section">
+
+        <div class="rose-container">
+
+            <div class="rose" id="roseBtn">🌹</div>
+
+            <h2 data-i18n="roseTitle">
+                اضغطي على الوردة
+            </h2>
+
+            <p id="roseMessage" data-i18n="roseDefault">
+                يمكن تفتح لكِ كلمة من قلبي...
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= LETTER ================= -->
+
+    <section id="letter" class="letter-section">
+
+        <div class="letter-card">
+
+            <div class="letter-icon">💌</div>
+
+            <h2 data-i18n="letterTitle">
+                رسالة مني إلى زينة
+            </h2>
+
+            <div id="letterText" class="letter-text"></div>
+
+            <button id="startLetterBtn" class="main-btn">
+                <span data-i18n="readLetter">
+                    اقرئي رسالتي ❤️
+                </span>
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CAKE ================= -->
+
+    <section class="cake-section">
+
+        <div class="section-title">
+
+            <span>🎂</span>
+
+            <h2 data-i18n="cakeTitle">
+                عندك أمنية؟
+            </h2>
+
+            <p data-i18n="cakeText">
+                أطفئي الشموع واحدة واحدة...
+            </p>
+
+        </div>
+
+
+        <div class="cake">
+
+            <div class="candle candle-left" data-candle="1">
+                <div class="wick"></div>
+                <div class="flame"></div>
+            </div>
+
+            <div class="candle candle-center" data-candle="2">
+                <div class="wick"></div>
+                <div class="flame"></div>
+            </div>
+
+            <div class="candle candle-right" data-candle="3">
+                <div class="wick"></div>
+                <div class="flame"></div>
+            </div>
+
+            <div class="cake-top">
+                <div class="frosting"></div>
+            </div>
+
+            <div class="cake-layer cake-middle"></div>
+
+            <div class="cake-layer cake-bottom">
+
+                <div class="cake-name">
+                    ZENA
+                </div>
+
+                <div class="cake-decoration">
+                    ♥ ♥ ♥
+                </div>
+
+            </div>
+
+            <div class="cake-plate"></div>
+
+        </div>
+
+        <p id="cakeMessage"></p>
+
+    </section>
+
+
+    <!-- ================= FINAL ================= -->
+
+    <section class="final-section">
+
+        <div id="finalHearts"></div>
+
+        <div class="final-content">
+
+            <span class="final-small">
+                AND THE STORY CONTINUES...
+            </span>
+
+            <h1>ZENA</h1>
+
+            <div class="final-date">
+                13 • 10 • 2001
+            </div>
+
+            <div class="final-heart">
+                ❤️
+            </div>
+
+            <h2 data-i18n="finalTitle">
+                كل عام وأنتِ أجمل شيء في حياتي.
+            </h2>
+
+            <p data-i18n="finalText">
+                أتمنى أن تكون سنتك الجديدة مليئة بالسلام،
+                والضحكات، والأيام الجميلة...
+                وأتمنى أن أكون موجودًا في أكبر عدد ممكن منها.
+            </p>
+
+            <strong>
+                Forever & Always ❤️
+            </strong>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PASSWORD MODAL ================= -->
+
+    <div id="passwordModal" class="modal">
+
+        <div class="modal-box">
+
+            <button id="closePassword" class="close-modal">×</button>
+
+            <div class="modal-icon">🔐</div>
+
+            <h2 data-i18n="passwordTitle">
+                السر مخبأ هنا
+            </h2>
+
+            <p data-i18n="passwordText">
+                أدخلي كلمة السر ❤️
+            </p>
+
+            <input
+                type="password"
+                id="passwordInput"
+                data-i18n-placeholder="passwordPlaceholder"
+                placeholder="كلمة السر"
+            >
+
+            <button id="checkPassword" class="main-btn">
+                <span data-i18n="openSecret">
+                    افتحي السر
+                </span>
+            </button>
+
+            <p id="passwordError"></p>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= LOVE LETTER MODAL ================= -->
+
+    <div id="loveLetterModal" class="modal">
+
+        <div class="modal-box large-modal">
+
+            <button id="closeLetter" class="close-modal">×</button>
+
+            <div class="modal-icon">💌</div>
+
+            <h2 data-i18n="secretLetterTitle">
+                إلى زينة...
+            </h2>
+
+            <div id="secretLetterText" class="secret-letter-text"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= GIFT MODAL ================= -->
+
+    <div id="giftModal" class="modal">
+
+        <div class="modal-box">
+
+            <button id="closeGift" class="close-modal">×</button>
+
+            <div id="giftIcon" class="modal-icon">🎁</div>
+
+            <h2 id="giftTitle">هديتك</h2>
+
+            <p id="giftModalText"></p>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= LIGHTBOX ================= -->
+
+    <div id="lightbox" class="lightbox">
+
+        <button id="closeLightbox">×</button>
+
+        <img id="lightboxImage" src="" alt="Memory">
+
+    </div>
+
+
+    <!-- ================= TOAST ================= -->
+
+    <div id="toast">❤️</div>
+
+
+    <!-- ================= BACK TOP ================= -->
+
+    <button id="backTop">↑</button>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
